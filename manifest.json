@@ -1,0 +1,20 @@
+{
+  "name": "Alicante",
+  "short_name": "Alicante",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#0A2540",
+  "background_color": "#FFFFFF",
+  "icons": [
+    {
+      "src": "/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "lang": "es",
+  "orientation": "portrait-secondary",
+  "scope": "/",
+  "description": "Servicios geotécnicos profesionales en Alicante, Spain. Estudios de suelo, ensayos y consultoría técnica.",
+  "id": "/alicante-0259"
+}

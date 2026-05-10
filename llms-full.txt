@@ -1,0 +1,62 @@
+# Alicante
+
+> Geotechnical engineering company in Chile, providing professional services in soil mechanics, foundation engineering and site investigation.
+
+## Services
+- [Aislacion Sismica](https://alicante.mecanicadesuelos.vip/aislacion-sismica/)
+- [Amplificacion Sismica](https://alicante.mecanicadesuelos.vip/amplificacion-sismica/)
+- [Asentamiento Diferencial](https://alicante.mecanicadesuelos.vip/asentamiento-diferencial/)
+- [Calicatas Exploratorias](https://alicante.mecanicadesuelos.vip/calicatas-exploratorias/)
+- [Capacidad De Carga](https://alicante.mecanicadesuelos.vip/capacidad-de-carga/)
+- [Cbr Vial](https://alicante.mecanicadesuelos.vip/cbr-vial/)
+- [Cimentaciones](https://alicante.mecanicadesuelos.vip/cimentaciones/)
+- [Cimentaciones Rellenos](https://alicante.mecanicadesuelos.vip/cimentaciones-rellenos/)
+- [Cimentaciones Superficiales](https://alicante.mecanicadesuelos.vip/cimentaciones-superficiales/)
+- [Clasificacion Suelos](https://alicante.mecanicadesuelos.vip/clasificacion-suelos/)
+- [Columnas Grava](https://alicante.mecanicadesuelos.vip/columnas-grava/)
+- [Compactacion Dinamica](https://alicante.mecanicadesuelos.vip/compactacion-dinamica/)
+- [Compresion Simple](https://alicante.mecanicadesuelos.vip/compresion-simple/)
+- [Corte Directo](https://alicante.mecanicadesuelos.vip/corte-directo/)
+- [Deep Soil Mixing](https://alicante.mecanicadesuelos.vip/deep-soil-mixing/)
+- [Densidad Cono Arena](https://alicante.mecanicadesuelos.vip/densidad-cono-arena/)
+- [Deslizamientos](https://alicante.mecanicadesuelos.vip/deslizamientos/)
+- [Dilatometro](https://alicante.mecanicadesuelos.vip/dilatometro/)
+- [Drenaje Geotecnico](https://alicante.mecanicadesuelos.vip/drenaje-geotecnico/)
+- [Drenaje Vial](https://alicante.mecanicadesuelos.vip/drenaje-vial/)
+- [Drenes Verticales](https://alicante.mecanicadesuelos.vip/drenes-verticales/)
+- [Ensayo Cbr](https://alicante.mecanicadesuelos.vip/ensayo-cbr/)
+- [Ensayo Cpt](https://alicante.mecanicadesuelos.vip/ensayo-cpt/)
+- [Ensayo Proctor](https://alicante.mecanicadesuelos.vip/ensayo-proctor/)
+- [Ensayo Spt](https://alicante.mecanicadesuelos.vip/ensayo-spt/)
+- [Ensayo Triaxial](https://alicante.mecanicadesuelos.vip/ensayo-triaxial/)
+- [Ensayos In Situ](https://alicante.mecanicadesuelos.vip/ensayos-in-situ/)
+- [Erosion Suelos](https://alicante.mecanicadesuelos.vip/erosion-suelos/)
+- [Estabilidad Taludes](https://alicante.mecanicadesuelos.vip/estabilidad-taludes/)
+- [Estabilizacion Cal Cemento](https://alicante.mecanicadesuelos.vip/estabilizacion-cal-cemento/)
+- [Estabilizacion Carreteras](https://alicante.mecanicadesuelos.vip/estabilizacion-carreteras/)
+- [Estabilizacion Taludes](https://alicante.mecanicadesuelos.vip/estabilizacion-taludes/)
+- [Estudio Mecanica Suelos](https://alicante.mecanicadesuelos.vip/estudio-mecanica-suelos/)
+- [Evaluacion Pavimentos](https://alicante.mecanicadesuelos.vip/evaluacion-pavimentos/)
+- [Excavaciones Profundas](https://alicante.mecanicadesuelos.vip/excavaciones-profundas/)
+- [Excavaciones Subterraneas](https://alicante.mecanicadesuelos.vip/excavaciones-subterraneas/)
+- [Exploracion](https://alicante.mecanicadesuelos.vip/exploracion/)
+- [Factor Seguridad](https://alicante.mecanicadesuelos.vip/factor-seguridad/)
+- [Falla Taludes](https://alicante.mecanicadesuelos.vip/falla-taludes/)
+- [Flujos Detritos](https://alicante.mecanicadesuelos.vip/flujos-detritos/)
+- [Geoceldas](https://alicante.mecanicadesuelos.vip/geoceldas/)
+- [Geofisica](https://alicante.mecanicadesuelos.vip/geofisica/)
+- [Georradar Gpr](https://alicante.mecanicadesuelos.vip/georradar-gpr/)
+- [Geotecnia Vial](https://alicante.mecanicadesuelos.vip/geotecnia-vial/)
+- [Geotextiles](https://alicante.mecanicadesuelos.vip/geotextiles/)
+- [Granulometria](https://alicante.mecanicadesuelos.vip/granulometria/)
+- [Grouting](https://alicante.mecanicadesuelos.vip/grouting/)
+- [Instrumentacion Geotecnica](https://alicante.mecanicadesuelos.vip/instrumentacion-geotecnica/)
+- [Jet Grouting](https://alicante.mecanicadesuelos.vip/jet-grouting/)
+- [Laboratorio](https://alicante.mecanicadesuelos.vip/laboratorio/)
+
+## Contact
+- Website: https://alicante.mecanicadesuelos.vip/
+
+## About
+This page provides information about geotechnical engineering services available in Chile.
+The company complies with local and international standards including ASTM, ISO and country-specific norms.
