@@ -115,6 +115,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#8B0000) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <div class="topbar">
@@ -181,7 +217,7 @@ header.hero, .hero { position: relative !important; }
 
 <section class="block"><div class="container"><h2>Preguntas más comunes</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
-<details><summary>¿Qué diferencia hay entre un pavimento rígido y uno flexible para Alicante?</summary><p>El pavimento rígido distribuye cargas a través de una losa de hormigón que trabaja a flexión, ideal para suelos con baja capacidad portante o tráfico pesado. En Alicante, con arcillas expansivas, el rígido evita deformaciones por bombeo, pero requiere un buen sistema de juntas. El flexible es más barato inicialmente, pero puede fallar por fatiga en accesos portuarios o vías de alta frecuencia.</p></details><details><summary>¿Cuánto cuesta un estudio de diseño de pavimento rígido en Alicante?</summary><p>El rango referencial para un estudio completo (calicatas, CBR, cálculo de espesores y juntas) está entre 1.070 y 3.260 euros, dependiendo del número de ensayos y la extensión del tramo. Incluye informe técnico con planos y recomendaciones de ejecución. El precio varía si se requiere mejora del terreno o ensayos adicionales como placa de carga.</p></details><details><summary>¿Qué normativa española regula el diseño de pavimentos rígidos?</summary><p>La principal es la Instrucción de Carreteras 6.1-IC (Secciones de firme, 2003), que define categorías de tráfico, espesores mínimos y criterios de juntas. También se aplica la Norma 8.1-IC de drenaje y la UNE 127.010 para el hormigón. Para cargas excepcionales, se consulta la guía AASHTO 1993 adaptada a la normativa europea.</p></details><details><summary>¿Cuándo es obligatorio usar pavimento rígido en lugar de flexible en Alicante?</summary><p>No es obligatorio por ley, pero se recomienda en zonas con tráfico pesado frecuente (accesos a puertos, polígonos industriales, aeropuertos) o suelos muy expansivos como los de la Marina Baja. También en calles con pendientes fuertes donde el flexible sufre ahuellamiento. El ingeniero responsable decide basándose en el estudio de tráfico y el CBR.</p></details></div></section>
+<details><summary>¿Qué diferencia hay entre un pavimento rígido y uno flexible para Alicante?</summary><p>El pavimento rígido distribuye cargas a través de una losa de hormigón que trabaja a flexión, ideal para suelos con baja capacidad portante o tráfico pesado. En Alicante, con arcillas expansivas, el rígido evita deformaciones por bombeo, pero requiere un buen sistema de juntas. El flexible es más barato inicialmente, pero puede fallar por fatiga en accesos portuarios o vías de alta frecuencia.</p></details><details><summary>¿Cuánto cuesta un estudio de diseño de pavimento rígido en Alicante?</summary><p>El rango referencial para un estudio completo (calicatas, CBR, cálculo de espesores y juntas) está entre 1.070 y 3.260 euros, dependiendo del número de ensayos y la extensión del tramo. Incluye informe técnico con planos y recomendaciones de ejecución. El precio varía si se requiere mejora del terreno o ensayos adicionales como <a href="/placa-de-carga/">placa de carga</a>.</p></details><details><summary>¿Qué normativa española regula el diseño de pavimentos rígidos?</summary><p>La principal es la Instrucción de Carreteras 6.1-IC (Secciones de firme, 2003), que define categorías de tráfico, espesores mínimos y criterios de juntas. También se aplica la Norma 8.1-IC de drenaje y la UNE 127.010 para el hormigón. Para cargas excepcionales, se consulta la guía AASHTO 1993 adaptada a la normativa europea.</p></details><details><summary>¿Cuándo es obligatorio usar pavimento rígido en lugar de flexible en Alicante?</summary><p>No es obligatorio por ley, pero se recomienda en zonas con tráfico pesado frecuente (accesos a puertos, polígonos industriales, aeropuertos) o suelos muy expansivos como los de la Marina Baja. También en calles con pendientes fuertes donde el flexible sufre ahuellamiento. El ingeniero responsable decide basándose en el estudio de tráfico y el CBR.</p></details></div></section>
 
 
 

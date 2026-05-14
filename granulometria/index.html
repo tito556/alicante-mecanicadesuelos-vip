@@ -115,6 +115,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#8B0000) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <div class="topbar">
@@ -181,7 +217,7 @@ header.hero, .hero { position: relative !important; }
 
 <section class="block"><div class="container"><h2>Preguntas más comunes</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
-<details><summary>¿Cuánto cuesta un análisis granulométrico completo en Alicante?</summary><p>El rango referencial para el <a href="../cimentaciones-rellenos/" data-interlink="1">análisis</a> granulométrico con tamices e hidrómetro en Alicante se sitúa entre 70 y 90 euros por muestra, dependiendo del número de fracciones a separar y la urgencia del informe. Si se requieren ensayos adicionales como <a href="../limites-atterberg/" data-interlink="1">límites de Atterberg</a> o Proctor, el paquete puede ajustarse.</p></details><details><summary>¿Qué diferencia hay entre el tamizado en seco y el lavado en el análisis granulométrico?</summary><p>El tamizado en seco es válido para suelos con menos del 5 % de finos. Cuando el contenido de arcillas y limos supera ese umbral, el lavado elimina las partículas adheridas a los granos gruesos y evita que se obstruyan los tamices. En Alicante, donde abundan los suelos con matriz limo-arcillosa, siempre recomendamos el lavado previo.</p></details><details><summary>¿En qué tipo de proyectos de Alicante es obligatorio el análisis granulométrico con hidrómetro?</summary><p>Es exigible en proyectos de edificación cuando se sospechan suelos finos plásticos, en obras viales para clasificar la subrasante, y en estudios de estabilidad de taludes donde se necesita conocer el porcentaje de arcilla. También lo solicitan los ayuntamientos de la comarca para movimientos de tierras superiores a 5000 m³.</p></details><details><summary>¿Cuánto tiempo tarda en obtenerse el resultado completo del ensayo?</summary><p>El proceso completo, desde la recepción de la muestra hasta la emisión del informe, requiere entre 48 y 72 horas. La sedimentación por hidrómetro ocupa las primeras 24 horas, y el tamizado y secado posteriores se completan en el segundo día. Para urgencias, podemos adelantar los resultados parciales del tamizado en 24 horas.</p></details><details><summary>¿Qué normativa se aplica al análisis granulométrico en Alicante?</summary><p>Trabajamos bajo las normas UNE 103101 y D6913 para tamizado e hidrómetro, además de la UNE 103101:1995 para tamizado. En proyectos que requieren homologación europea, también aplicamos la EN 933-1. Toda la instrumentación está calibrada según la ISO 17025.</p></details></div></section>
+<details><summary>¿Cuánto cuesta un análisis granulométrico completo en Alicante?</summary><p>El rango referencial para el <a href="../cimentaciones-rellenos/" data-interlink="1">análisis</a> granulométrico con tamices e hidrómetro en Alicante se sitúa entre 70 y 90 euros por muestra, dependiendo del número de fracciones a separar y la urgencia del informe. Si se requieren ensayos adicionales como <a href="../limites-atterberg/" data-interlink="1">límites de Atterberg</a> o Proctor, el paquete puede ajustarse.</p></details><details><summary>¿Qué diferencia hay entre el tamizado en seco y el lavado en el análisis granulométrico?</summary><p>El tamizado en seco es válido para suelos con menos del 5 % de finos. Cuando el contenido de arcillas y limos supera ese umbral, el lavado elimina las partículas adheridas a los granos gruesos y evita que se obstruyan los tamices. En Alicante, donde abundan los suelos con matriz limo-arcillosa, siempre recomendamos el lavado previo.</p></details><details><summary>¿En qué tipo de proyectos de Alicante es obligatorio el análisis granulométrico con hidrómetro?</summary><p>Es exigible en proyectos de edificación cuando se sospechan suelos finos plásticos, en obras viales para clasificar la subrasante, y en estudios de <a href="/estabilidad-taludes/">estabilidad de taludes</a> donde se necesita conocer el porcentaje de arcilla. También lo solicitan los ayuntamientos de la comarca para movimientos de tierras superiores a 5000 m³.</p></details><details><summary>¿Cuánto tiempo tarda en obtenerse el resultado completo del ensayo?</summary><p>El proceso completo, desde la recepción de la muestra hasta la emisión del informe, requiere entre 48 y 72 horas. La sedimentación por hidrómetro ocupa las primeras 24 horas, y el tamizado y secado posteriores se completan en el segundo día. Para urgencias, podemos adelantar los resultados parciales del tamizado en 24 horas.</p></details><details><summary>¿Qué normativa se aplica al análisis granulométrico en Alicante?</summary><p>Trabajamos bajo las normas UNE 103101 y D6913 para tamizado e hidrómetro, además de la UNE 103101:1995 para tamizado. En proyectos que requieren homologación europea, también aplicamos la EN 933-1. Toda la instrumentación está calibrada según la ISO 17025.</p></details></div></section>
 
 
 

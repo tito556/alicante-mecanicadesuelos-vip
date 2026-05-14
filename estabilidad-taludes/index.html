@@ -115,6 +115,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#8B0000) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <div class="topbar">
@@ -166,7 +202,7 @@ header.hero, .hero { position: relative !important; }
 
 
 
-<section class="block"><div class="container"><h2>Método y cobertura</h2><div>En Alicante vemos a menudo que el talud se proyecta con un factor de seguridad mínimo de 1.5 en condiciones estáticas, pero las lluvias torrenciales de septiembre reducen ese valor hasta 1.1 por saturación del terreno. Por eso nuestro protocolo incluye un análisis de infiltración con el método de Morgenstern-Price y la medición de presiones intersticiales con piezómetros de cuerda vibrante.<br><br>Los pasos que seguimos en cada evaluación son:<br><ul><li>Reconocimiento geotécnico con calicatas y sondeos rotativos para identificar planos de debilidad.</li><li>Toma de muestras inalteradas para ensayos de corte directo y triaxial.</li><li>Modelización con software Slide 2D/3D considerando cargas sísmicas según la NCSE-02.</li><li>Diseño de medidas correctoras como muros anclados o geoceldas en zonas de alta pendiente.</li></ul>El informe final entrega el factor de seguridad por cada superficie de rotura y las recomendaciones de drenaje profundo mediante drenes verticales cuando el nivel freático está alto.</div></div></section><section class="block" style="padding:1.5rem 2rem"><div class="container" style="max-width:60%;margin:0 auto"><figure style="margin:0;border-radius:10px;overflow:hidden;border:1px solid #E5E7EB"><figcaption style="padding:.5rem .8rem;font-size:.78rem;color:#64748B;background:#FAFAF7">Imagen técnica — Alicante</figcaption></figure></div></section><section class="block tint"><div class="container"><h2>Contexto regional</h2><p>En el barrio de la Albufereta el sustrato es calcáreo y los taludes aguantan bien hasta que el agua de escorrentía satura las arcillas de cobertera, mientras que en la zona del Castillo de Santa Bárbara la alternancia de margas y areniscas genera planos de debilidad que activan deslizamientos traslacionales. Ignorar esa diferencia entre dos sectores separados por apenas dos kilómetros es el error que provoca roturas en muros de contención y cortes de carretera durante el otoño mediterráneo.</p></div></section>
+<section class="block"><div class="container"><h2>Método y cobertura</h2><div>En Alicante vemos a menudo que el talud se proyecta con un factor de seguridad mínimo de 1.5 en condiciones estáticas, pero las lluvias torrenciales de septiembre reducen ese valor hasta 1.1 por saturación del terreno. Por eso nuestro protocolo incluye un análisis de infiltración con el método de Morgenstern-Price y la medición de presiones intersticiales con piezómetros de cuerda vibrante.<br><br>Los pasos que seguimos en cada evaluación son:<br><ul><li>Reconocimiento geotécnico con calicatas y sondeos rotativos para identificar planos de debilidad.</li><li>Toma de muestras inalteradas para ensayos de corte directo y triaxial.</li><li>Modelización con software Slide 2D/3D considerando cargas sísmicas según la NCSE-02.</li><li>Diseño de medidas correctoras como muros anclados o geoceldas en zonas de alta pendiente.</li></ul>El informe final entrega el factor de seguridad por cada superficie de rotura y las recomendaciones de drenaje profundo mediante drenes verticales cuando el nivel freático está alto.</div></div></section><section class="block" style="padding:1.5rem 2rem"><div class="container" style="max-width:60%;margin:0 auto"><figure style="margin:0;border-radius:10px;overflow:hidden;border:1px solid #E5E7EB"><figcaption style="padding:.5rem .8rem;font-size:.78rem;color:#64748B;background:#FAFAF7">Imagen técnica — Alicante</figcaption></figure></div></section><section class="block tint"><div class="container"><h2>Contexto regional</h2><p>En el barrio de la Albufereta el sustrato es calcáreo y los taludes aguantan bien hasta que el agua de escorrentía satura las arcillas de cobertera, mientras que en la zona del Castillo de Santa Bárbara la alternancia de margas y areniscas genera planos de debilidad que activan <a href="/deslizamientos/">deslizamientos</a> traslacionales. Ignorar esa diferencia entre dos sectores separados por apenas dos kilómetros es el error que provoca roturas en muros de contención y cortes de carretera durante el otoño mediterráneo.</p></div></section>
     <section class="block mid-cta-1e66-1e66" style="padding:2rem 0">
       <div style="max-width:720px;margin:0 auto;background:linear-gradient(135deg,#B08D4A15,#B08D4A08);border-left:4px solid #B08D4A;padding:1.5rem 1.8rem;border-radius:6px;text-align:center">
         <h3 style="margin:0 0 .4rem;font-size:1.15rem;color:#1E293B;text-align:center">¿Necesita una evaluación geotécnica?</h3>

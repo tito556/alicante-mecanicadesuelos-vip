@@ -115,6 +115,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#8B0000) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <div class="topbar">
@@ -166,7 +202,7 @@ header.hero, .hero { position: relative !important; }
 
 
 
-<section class="block"><div class="container"><h2>Método y cobertura</h2><div>El clima semiárido de Alicante, con apenas 300 mm de precipitación anual, genera perfiles de suelo con baja humedad natural y alta succión en los primeros metros. Esto afecta directamente a los ensayos de compactación y a la determinación del óptimo Proctor. Por eso en nuestro estudio de mecánica de suelos medimos la humedad in situ con el método del horno (UNE 103300) y ajustamos los ensayos Proctor estándar y modificado a las condiciones reales de la zona. Además, la presencia de suelos expansivos en áreas como San Vicente del Raspeig o el Pla de la Vallonga obliga a incluir los límites de Atterberg y el hinchamiento libre en la batería de ensayos. Complementamos la campaña con corte directo en muestras remoldeadas para obtener parámetros de resistencia al corte en condiciones saturadas, simulando el peor escenario tras lluvias torrenciales típicas de la gota fría.</div></div></section><section class="block" style="padding:1.5rem 2rem"><div class="container" style="max-width:60%;margin:0 auto"><figure style="margin:0;border-radius:10px;overflow:hidden;border:1px solid #E5E7EB"><figcaption style="padding:.5rem .8rem;font-size:.78rem;color:#64748B;background:#FAFAF7">Imagen técnica — Alicante</figcaption></figure></div></section><section class="block tint"><div class="container"><h2>Contexto regional</h2><p>Un edificio de 12 plantas en la avenida de la Costa Blanca, a 200 metros del mar, se cimentó con una capacidad portante estimada a partir de un único sondeo sin ensayo de penetración continua. A los dos años, el bloque norte había descendido 4,2 cm más que el sur. El estudio de mecánica de suelos posterior —con tres sondeos y ensayos triaxiales— reveló un estrato de limos orgánicos compresibles bajo la capa de relleno. La reparación mediante micropilotes de inyección costó más del triple que el estudio original. En Alicante, donde la costa alterna dunas fósiles con paleocauces, saltarse la caracterización detallada del subsuelo es condenar la obra a patologías estructurales que se multiplican con el tiempo.</p></div></section>
+<section class="block"><div class="container"><h2>Método y cobertura</h2><div>El clima semiárido de Alicante, con apenas 300 mm de precipitación anual, genera perfiles de suelo con baja humedad natural y alta succión en los primeros metros. Esto afecta directamente a los ensayos de compactación y a la determinación del óptimo Proctor. Por eso en nuestro estudio de mecánica de suelos medimos la humedad in situ con el método del horno (UNE 103300) y ajustamos los ensayos Proctor estándar y modificado a las condiciones reales de la zona. Además, la presencia de suelos expansivos en áreas como San Vicente del Raspeig o el Pla de la Vallonga obliga a incluir los límites de Atterberg y el hinchamiento libre en la batería de ensayos. Complementamos la campaña con corte directo en muestras remoldeadas para obtener parámetros de resistencia al corte en condiciones saturadas, simulando el peor escenario tras lluvias torrenciales típicas de la gota fría.</div></div></section><section class="block" style="padding:1.5rem 2rem"><div class="container" style="max-width:60%;margin:0 auto"><figure style="margin:0;border-radius:10px;overflow:hidden;border:1px solid #E5E7EB"><figcaption style="padding:.5rem .8rem;font-size:.78rem;color:#64748B;background:#FAFAF7">Imagen técnica — Alicante</figcaption></figure></div></section><section class="block tint"><div class="container"><h2>Contexto regional</h2><p>Un edificio de 12 plantas en la avenida de la Costa Blanca, a 200 metros del mar, se cimentó con una capacidad portante estimada a partir de un único sondeo sin ensayo de penetración continua. A los dos años, el bloque norte había descendido 4,2 cm más que el sur. El estudio de mecánica de suelos posterior —con tres sondeos y <a href="/ensayo-triaxial/">ensayos triaxiales</a>— reveló un estrato de limos orgánicos compresibles bajo la capa de relleno. La reparación mediante micropilotes de inyección costó más del triple que el estudio original. En Alicante, donde la costa alterna dunas fósiles con paleocauces, saltarse la caracterización detallada del subsuelo es condenar la obra a patologías estructurales que se multiplican con el tiempo.</p></div></section>
     <section class="block mid-cta-1e66-1e66" style="padding:2rem 0">
       <div style="max-width:720px;margin:0 auto;background:linear-gradient(135deg,#B08D4A15,#B08D4A08);border-left:4px solid #B08D4A;padding:1.5rem 1.8rem;border-radius:6px;text-align:center">
         <h3 style="margin:0 0 .4rem;font-size:1.15rem;color:#1E293B;text-align:center">¿Necesita una evaluación geotécnica?</h3>

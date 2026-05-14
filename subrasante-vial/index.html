@@ -115,6 +115,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#8B0000) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <div class="topbar">
@@ -181,7 +217,7 @@ header.hero, .hero { position: relative !important; }
 
 <section class="block"><div class="container"><h2>Preguntas más comunes</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
-<details><summary>¿Qué diferencia hay entre subrasante y explanada en la normativa española?</summary><p>La subrasante es la superficie del terreno natural una vez compactado; la explanada es el conjunto formado por la subrasante más las capas de suelo seleccionado o estabilizado que se colocan encima. La PG-3 define categorías de explanada (E1, E2, E3) según el módulo de deformación obtenido en el ensayo de placa de carga.</p></details><details><summary>¿Cuánto cuesta un diseño de subrasante vial para un tramo de 1 km en Alicante?</summary><p>El rango referencial para un estudio completo con calicatas, ensayos de laboratorio e informe técnico está entre 1.500 y 3.500 euros, dependiendo del número de sondeos y la complejidad del terreno. Para tramos muy largos se puede ajustar por metro lineal.</p></details><details><summary>¿Qué ensayos de campo se hacen para controlar la compactación de la subrasante?</summary><p>Se emplea el ensayo de densidad in situ con <a href="../densidad-cono-arena/" data-interlink="1">cono de arena</a> (UNE 103-900) o el densímetro nuclear, junto con la determinación de humedad. Además, el ensayo de placa de carga (NLT-357) mide el módulo de deformación Ev2, que debe superar los 50 MPa para explanada tipo E2 según PG-3.</p></details><details><summary>¿Cómo afecta la presencia de margas en Alicante al diseño de la subrasante?</summary><p>Las margas son suelos con alto contenido de carbonato cálcico y plasticidad media. Al compactarse pueden alcanzar buena resistencia, pero son sensibles al agua: si se saturan pierden capacidad portante rápidamente. En esos casos se recomienda un drenaje longitudinal profundo y, si el CBR es inferior a 5, una sustitución parcial con material granular.</p></details><details><summary>¿Cuándo es obligatorio estabilizar la subrasante con cal o cemento?</summary><p>Cuando el CBR de laboratorio es menor de 3 y el índice de plasticidad supera 12, la PG-3 exige tratamiento. La estabilización con cal reduce la plasticidad y aumenta la trabajabilidad; con cemento se incrementa la resistencia a compresión. En Alicante es común en suelos arcillosos del sur y en rellenos antrópicos de la huerta.</p></details></div></section>
+<details><summary>¿Qué diferencia hay entre subrasante y explanada en la normativa española?</summary><p>La subrasante es la superficie del terreno natural una vez compactado; la explanada es el conjunto formado por la subrasante más las capas de suelo seleccionado o estabilizado que se colocan encima. La PG-3 define categorías de explanada (E1, E2, E3) según el módulo de deformación obtenido en el ensayo de <a href="/placa-de-carga/">placa de carga</a>.</p></details><details><summary>¿Cuánto cuesta un diseño de subrasante vial para un tramo de 1 km en Alicante?</summary><p>El rango referencial para un estudio completo con calicatas, ensayos de laboratorio e informe técnico está entre 1.500 y 3.500 euros, dependiendo del número de sondeos y la complejidad del terreno. Para tramos muy largos se puede ajustar por metro lineal.</p></details><details><summary>¿Qué ensayos de campo se hacen para controlar la compactación de la subrasante?</summary><p>Se emplea el ensayo de densidad in situ con <a href="../densidad-cono-arena/" data-interlink="1">cono de arena</a> (UNE 103-900) o el densímetro nuclear, junto con la determinación de humedad. Además, el ensayo de placa de carga (NLT-357) mide el módulo de deformación Ev2, que debe superar los 50 MPa para explanada tipo E2 según PG-3.</p></details><details><summary>¿Cómo afecta la presencia de margas en Alicante al diseño de la subrasante?</summary><p>Las margas son suelos con alto contenido de carbonato cálcico y plasticidad media. Al compactarse pueden alcanzar buena resistencia, pero son sensibles al agua: si se saturan pierden capacidad portante rápidamente. En esos casos se recomienda un drenaje longitudinal profundo y, si el CBR es inferior a 5, una sustitución parcial con material granular.</p></details><details><summary>¿Cuándo es obligatorio estabilizar la subrasante con cal o cemento?</summary><p>Cuando el CBR de laboratorio es menor de 3 y el índice de plasticidad supera 12, la PG-3 exige tratamiento. La estabilización con cal reduce la plasticidad y aumenta la trabajabilidad; con cemento se incrementa la resistencia a compresión. En Alicante es común en suelos arcillosos del sur y en rellenos antrópicos de la huerta.</p></details></div></section>
 
 
 

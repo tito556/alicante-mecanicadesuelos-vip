@@ -115,6 +115,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#8B0000) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <div class="topbar">
@@ -181,7 +217,7 @@ header.hero, .hero { position: relative !important; }
 
 <section class="block"><div class="container"><h2>Preguntas más comunes</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
-<details><summary>¿Cuánto cuesta un ensayo CPT en Alicante?</summary><p>El rango referencial para un ensayo CPT en Alicante se sitúa entre 80 y 140 euros por metro lineal, dependiendo de la profundidad, el acceso al punto y si se requiere piezocono o sonda sísmica. Para proyectos con más de 10 puntos de ensayo, el coste por metro suele reducirse al tramo inferior del rango.</p></details><details><summary>¿Qué profundidad máxima se puede alcanzar con el CPT en Alicante?</summary><p>En condiciones normales alcanzamos entre 25 y 35 metros en los terrenos aluviales de Alicante, aunque el límite real lo impone la presencia de capas muy densas o el sustrato rocoso. En zonas como el Puerto o la Playa de San Juan, donde hay arenas sueltas saturadas, llegamos con facilidad a 30 metros sin rechazar.</p></details><details><summary>¿Qué diferencia hay entre CPT y SPT?</summary><p>El CPT proporciona un registro continuo centímetro a centímetro sin detener la penetración, mientras que el SPT es discontinuo y mide cada 60 cm. El CPT es más rápido en suelos homogéneos y permite detectar capas finas de 2-3 cm que el SPT pasaría por alto. Sin embargo, el SPT entrega muestra física del suelo, algo que el CPT no puede hacer.</p></details><details><summary>¿En qué tipo de proyectos de Alicante es obligatorio el CPT?</summary><p>No existe una obligación legal general, pero en Alicante es muy recomendable para edificios de más de 10 plantas, obras lineales como el soterramiento del ferrocarril, o cualquier estructura en suelos blandos cerca del litoral. El CPT suele exigirse en proyectos donde se necesita alta precisión en la estratigrafía para diseñar pilotajes o mejoramiento del terreno.</p></details></div></section>
+<details><summary>¿Cuánto cuesta un ensayo CPT en Alicante?</summary><p>El rango referencial para un ensayo CPT en Alicante se sitúa entre 80 y 140 euros por metro lineal, dependiendo de la profundidad, el acceso al punto y si se requiere piezocono o sonda sísmica. Para proyectos con más de 10 puntos de ensayo, el coste por metro suele reducirse al tramo inferior del rango.</p></details><details><summary>¿Qué profundidad máxima se puede alcanzar con el CPT en Alicante?</summary><p>En condiciones normales alcanzamos entre 25 y 35 metros en los terrenos aluviales de Alicante, aunque el límite real lo impone la presencia de capas muy densas o el sustrato rocoso. En zonas como el Puerto o la Playa de San Juan, donde hay arenas sueltas saturadas, llegamos con facilidad a 30 metros sin rechazar.</p></details><details><summary>¿Qué diferencia hay entre CPT y SPT?</summary><p>El CPT proporciona un registro continuo centímetro a centímetro sin detener la penetración, mientras que el SPT es discontinuo y mide cada 60 cm. El CPT es más rápido en suelos homogéneos y permite detectar capas finas de 2-3 cm que el SPT pasaría por alto. Sin embargo, el SPT entrega muestra física del suelo, algo que el CPT no puede hacer.</p></details><details><summary>¿En qué tipo de proyectos de Alicante es obligatorio el CPT?</summary><p>No existe una obligación legal general, pero en Alicante es muy recomendable para edificios de más de 10 plantas, obras lineales como el soterramiento del ferrocarril, o cualquier estructura en suelos blandos cerca del litoral. El CPT suele exigirse en proyectos donde se necesita alta precisión en la estratigrafía para diseñar pilotajes o <a href="/mejoramiento/">mejoramiento</a> del terreno.</p></details></div></section>
 
 
 

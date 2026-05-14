@@ -115,6 +115,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#8B0000) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <div class="topbar">
@@ -181,7 +217,7 @@ header.hero, .hero { position: relative !important; }
 
 <section class="block"><div class="container"><h2>Preguntas más comunes</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
-<details><summary>¿Qué diferencia hay entre el análisis de respuesta sísmica del sitio y un estudio de peligrosidad sísmica?</summary><p>La peligrosidad sísmica evalúa la probabilidad de que ocurra un terremoto de cierta magnitud en una región. El <a href="../cimentaciones-rellenos/" data-interlink="1">análisis</a> de respuesta sísmica del sitio, en cambio, estudia cómo las ondas sísmicas se modifican al atravesar los suelos locales: amplificación, licuefacción, filtrado de frecuencias. En Alicante, ambas son complementarias pero no intercambiables.</p></details><details><summary>¿Cuánto cuesta un análisis de respuesta sísmica del sitio en Alicante?</summary><p>El rango referencial para un <a href="../cimentaciones-rellenos/" data-interlink="1">análisis</a> unidimensional con MASW y registros de microtremores está entre 660 y 2.220 euros, dependiendo de la profundidad de estudio, la cantidad de puntos de medida y la necesidad o no de sondeos mecánicos adicionales. Proyectos con análisis 2D o efectos de cuenca pueden superar ese rango.</p></details><details><summary>¿Para qué tipo de proyectos es obligatorio este estudio en Alicante?</summary><p>Según la NCSE-02, es obligatorio en edificios de uso público, estructuras de importancia especial (hospitales, colegios, centros de emergencia) y en cualquier construcción en terrenos tipo IV (suelos blandos). También lo recomendamos para promociones residenciales en zonas de relleno o próximas a la costa, donde la amplificación puede ser significativa.</p></details><details><summary>¿Qué método de campo usan para medir la velocidad de ondas de corte?</summary><p>Combinamos MASW (<a href="../cimentaciones-rellenos/" data-interlink="1">análisis</a> multicanal de ondas superficiales) con refracción sísmica de ondas P y S, y en proyectos de alta precisión aplicamos crosshole o downhole. En Alicante, la presencia de nivel freático somero en zonas costeras hace que la refracción sísmica sea especialmente útil para delimitar el contacto entre arenas saturadas y arcillas.</p></details><details><summary>¿Cuánto tiempo tarda el estudio completo, desde el trabajo de campo hasta el informe?</summary><p>El trabajo de campo suele realizarse en una o dos jornadas. El procesado de datos, modelado numérico y redacción del informe geotécnico con los espectros de respuesta lleva entre 7 y 15 días hábiles. Si se requiere ensayos de laboratorio adicionales (triaxial cíclico, columna resonante), el plazo se amplía a 20-25 días.</p></details></div></section>
+<details><summary>¿Qué diferencia hay entre el análisis de respuesta sísmica del sitio y un estudio de peligrosidad sísmica?</summary><p>La peligrosidad sísmica evalúa la probabilidad de que ocurra un terremoto de cierta magnitud en una región. El <a href="../cimentaciones-rellenos/" data-interlink="1">análisis</a> de respuesta sísmica del sitio, en cambio, estudia cómo las ondas sísmicas se modifican al atravesar los suelos locales: amplificación, licuefacción, filtrado de frecuencias. En Alicante, ambas son complementarias pero no intercambiables.</p></details><details><summary>¿Cuánto cuesta un análisis de respuesta sísmica del sitio en Alicante?</summary><p>El rango referencial para un <a href="../cimentaciones-rellenos/" data-interlink="1">análisis</a> unidimensional con MASW y registros de microtremores está entre 660 y 2.220 euros, dependiendo de la profundidad de estudio, la cantidad de puntos de medida y la necesidad o no de sondeos mecánicos adicionales. Proyectos con análisis 2D o efectos de cuenca pueden superar ese rango.</p></details><details><summary>¿Para qué tipo de proyectos es obligatorio este estudio en Alicante?</summary><p>Según la NCSE-02, es obligatorio en edificios de uso público, estructuras de importancia especial (hospitales, colegios, centros de emergencia) y en cualquier construcción en terrenos tipo IV (suelos blandos). También lo recomendamos para promociones residenciales en zonas de relleno o próximas a la costa, donde la amplificación puede ser significativa.</p></details><details><summary>¿Qué método de campo usan para medir la velocidad de ondas de corte?</summary><p>Combinamos MASW (<a href="../cimentaciones-rellenos/" data-interlink="1">análisis</a> multicanal de ondas superficiales) con refracción sísmica de ondas P y S, y en proyectos de alta precisión aplicamos crosshole o downhole. En Alicante, la presencia de nivel freático somero en zonas costeras hace que la refracción sísmica sea especialmente útil para delimitar el contacto entre arenas saturadas y arcillas.</p></details><details><summary>¿Cuánto tiempo tarda el estudio completo, desde el trabajo de campo hasta el informe?</summary><p>El trabajo de campo suele realizarse en una o dos jornadas. El procesado de datos, modelado numérico y redacción del informe geotécnico con los espectros de respuesta lleva entre 7 y 15 días hábiles. Si se requiere ensayos de <a href="/laboratorio/">laboratorio</a> adicionales (triaxial cíclico, columna resonante), el plazo se amplía a 20-25 días.</p></details></div></section>
 
 
 
