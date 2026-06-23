@@ -1,9 +1,9 @@
 {
-  "name": "Alicante",
-  "short_name": "Alicante",
+  "name": "Mecanicadesuelos",
+  "short_name": "Mecanicadesu",
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#0A2540",
+  "theme_color": "#7C2D12",
   "background_color": "#FFFFFF",
   "icons": [
     {
@@ -11,10 +11,5 @@
       "sizes": "any",
       "type": "image/svg+xml"
     }
-  ],
-  "lang": "es",
-  "orientation": "portrait-secondary",
-  "scope": "/",
-  "description": "Servicios geotécnicos profesionales en Alicante, Spain. Estudios de suelo, ensayos y consultoría técnica.",
-  "id": "/alicante-0259"
+  ]
 }
